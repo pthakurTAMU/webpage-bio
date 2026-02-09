@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Premanshu Thakur — Web Bio</title>
-  <meta name="description" content="Bio page with accessibility interests for class collaboration." />
+  <meta name="description" content="Premanshu's bio and accessibility interests for class collaboration." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -14,32 +14,38 @@
   <header class="site-header" role="banner">
     <div class="container header-grid">
       <div class="header-text">
+        <p class="kicker">Web Bio</p>
         <h1>Premanshu Thakur</h1>
         <p class="tagline">
-          Master’s student in <strong>ECE</strong> • Passionate about <em>chip design</em>  • Interested in <em>accessible technology</em> and inclusive design
+          Master’s student in <strong>ECE</strong> • Passionate about <em>chip design</em> • Interested in <em>accessible technology</em>
         </p>
 
         <nav aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
-            <li><a href="#interests">Accessibility interests</a></li>
-            <li><a href="#collab">Team project fit</a></li>
+            <li><a href="#interests">Accessibility</a></li>
+            <li><a href="#collab">Team Project</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="links.html">Web Page Bio Links</a></li>
+            <li><a href="links.html">Bio Links</a></li>
           </ul>
         </nav>
       </div>
 
-      <!-- Non-decorative image (meaningful) -->
+      <!-- Meaningful image (non-decorative) -->
       <figure class="profile">
         <img
-          src="image.jpg"
+          src="image.jpg."
           width="360"
           height="360"
-          alt="Profile picture of Premanshu"
+          alt="Portrait photo of Premanshu Thakur"
         />
         <figcaption>That’s me—feel free to say hi in class.</figcaption>
       </figure>
+    </div>
+
+    <!-- Decorative separator (decorative image) -->
+    <div class="decorative-wrap" aria-hidden="true">
+      <img class="decorative" src="non-deco-image.svg" alt="" />
     </div>
   </header>
 
@@ -47,21 +53,20 @@
     <section id="about" class="card" aria-labelledby="about-title">
       <h2 id="about-title">About me</h2>
       <p>
-        I’m Premanshu. I’m a second-year Master’s student in Computer Engineering.
-        I enjoy learning systems end-to-end—from hardware to software, and I’m motivated by design that helps
-        more people participate comfortably and independently.
+        I’m Premanshu, a Master’s student in Electrical and Computer Engineering. I like learning systems
+        end-to-end—hardware to software—and I enjoy building things that feel <em>clear</em>, <em>predictable</em>, and usable.
       </p>
 
       <h3>What I’m into</h3>
-      <ul>
-        <li>RTL design and Computer Architecture</li>
-        <li>Music, food and geopolitics. </li>
+      <ul class="pill-list">
+        <li>RTL design & computer architecture</li>
+        <li>Music (guitar), food, and geopolitics</li>
       </ul>
 
       <h3>Why accessibility matters to me</h3>
       <p>
-        I believe accessibility is not “extra”—it’s part of quality. When we design with accessibility in mind,
-        we reduce barriers and improve usability for everyone.
+        Accessibility is not "extra"—it’s part of quality. Small decisions (labels, focus order, readable layouts)
+        can remove barriers and help more people participate independently.
       </p>
     </section>
 
@@ -69,9 +74,8 @@
       <h2 id="interests-title">My accessibility interests</h2>
 
       <p>
-        I’m especially aligned with the <strong>social model</strong> of disability: many difficulties people face
-        come from environments and tools that weren’t designed inclusively. I like working on changes that are
-        concrete and testable.
+        I align with the <strong>social model</strong> of disability: many barriers come from environments and tools,
+        not the person. I like changes that are concrete and testable.
       </p>
 
       <h3>Topics I want to explore more</h3>
@@ -81,22 +85,16 @@
         <li>Clear language, captions, and reducing cognitive load</li>
       </ol>
 
-      <!-- Decorative image (purely decorative) -->
-      <div class="decorative-wrap" aria-hidden="true">
-        <img class="decorative" src="non-deco-image.svg" alt="" />
-      </div>
-
       <p class="hint">
-        For the class directory, visit the <a href="links.html">Web Page Bio Links</a> page.
+        You can find everyone’s bios on the <a href="links.html">Web Page Bio Links</a> page.
       </p>
     </section>
 
     <section id="collab" class="card" aria-labelledby="collab-title">
-      <h2 id="collab-title">How we could team up</h2>
-
+      <h2 id="collab-title">Team project fit</h2>
       <p>
-        If your interests overlap, I’d love to collaborate on a project where we can measure improvements
-        (keyboard flow, clarity, error handling, etc.). I’m happy to help with testing, structure, and technical build-out.
+        I’d love to collaborate on a project where we can measure improvements (keyboard flow, clarity, error handling).
+        I’m happy to help with testing, structure, and implementation.
       </p>
 
       <h3>Project directions I’d enjoy</h3>
@@ -105,21 +103,22 @@
         <li><strong>Form redesign</strong>: labels, instructions, errors, and keyboard-first UX</li>
         <li><strong>Captioning/usability check</strong>: compare experiences across devices and settings</li>
       </ul>
+
+      <h3>How I can contribute</h3>
+      <ul>
+        <li>Keyboard-only testing + focus order checks</li>
+        <li>Fixing semantics (headings, landmarks, labels)</li>
+        <li>Writing clear microcopy for instructions and errors</li>
+      </ul>
     </section>
 
     <section id="contact" class="card" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact me</h2>
       <p>
-        This form opens your email app and drafts a message to me (no scripting needed).
+        This form drafts an email to me (no scripting needed).
       </p>
 
-      <!-- Form initiates an action via mailto -->
-      <form
-        class="contact-form"
-        action="mailto:pthakur@tamu.edu"
-        method="post"
-        enctype="text/plain"
-      >
+      <form class="contact-form" action="mailto:pthakur@tamu.edu" method="post" enctype="text/plain">
         <fieldset>
           <legend>Send a message</legend>
 
@@ -143,6 +142,15 @@
           </div>
 
           <div class="form-row">
+            <p id="help-label"><strong>What do you want to work on?</strong></p>
+            <div class="checklist" role="group" aria-labelledby="help-label">
+              <label><input type="checkbox" name="help" value="audit" /> Audit & fixes</label>
+              <label><input type="checkbox" name="help" value="forms" /> Forms & errors</label>
+              <label><input type="checkbox" name="help" value="captions" /> Captions & media</label>
+            </div>
+          </div>
+
+          <div class="form-row">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
@@ -151,9 +159,7 @@
         </fieldset>
       </form>
 
-      <p class="small">
-        Or go to the <a href="links.html">Web Page Bio Links</a> page.
-      </p>
+      <p class="small">Directory: <a href="links.html">Web Page Bio Links</a></p>
     </section>
   </main>
 
