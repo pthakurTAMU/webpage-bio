@@ -4,14 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web Page Bio Links</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Directory of student bio pages for the class." />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
-  <main class="container" id="main">
-    <h1>Web Page Bio Links</h1>
-    <ul>
-      <li><a href="index.html">Premanshu Thakur</a></li>
-    </ul>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <main class="container" id="main" role="main">
+    <section class="card" aria-labelledby="links-title">
+      <h1 id="links-title">Web Page Bio Links</h1>
+
+      <p class="hint">
+        This page lists student bio pages. Add your entry in alphabetical order by first name.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Premanshu</strong> Thakur —
+          <a href="index.html">My bio page</a> —
+          <a
+            href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Class Bio Links (Google Doc)
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026</p>
+      <p><a href="index.html">Back to Premanshu’s bio</a></p>
+    </div>
+  </footer>
 </body>
 </html>
