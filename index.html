@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Premanshu Thakur — Web Bio</title>
   <meta name="description" content="Premanshu's bio and accessibility interests for class collaboration." />
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Cache-busting stylesheet (keep ONLY this link) -->
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 
 <body>
@@ -38,6 +40,7 @@
           width="360"
           height="360"
           alt="Portrait photo of Premanshu Thakur"
+          loading="lazy"
         />
         <figcaption>That’s me—feel free to say hi in class.</figcaption>
       </figure>
@@ -45,7 +48,7 @@
 
     <!-- Decorative separator (decorative image) -->
     <div class="decorative-wrap" aria-hidden="true">
-      <img class="decorative" src="non-deco-image.svg" alt="" />
+      <img class="decorative" src="non-deco-image.svg" alt="" loading="lazy" />
     </div>
   </header>
 
@@ -59,7 +62,7 @@
 
       <h3>What I’m into</h3>
       <ul class="pill-list">
-        <li>RTL design & computer architecture</li>
+        <li>RTL design &amp; computer architecture</li>
         <li>Music (guitar), food, and geopolitics</li>
       </ul>
 
@@ -86,7 +89,15 @@
       </ol>
 
       <p class="hint">
-        You can find everyone’s bios on the <a href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?tab=t.0">Web Page Bio Links</a> page.
+        You can find everyone’s bios on the
+        <a
+          href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?tab=t.0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Web Page Bio Links
+        </a>
+        page.
       </p>
     </section>
 
@@ -144,9 +155,9 @@
           <div class="form-row">
             <p id="help-label"><strong>What do you want to work on?</strong></p>
             <div class="checklist" role="group" aria-labelledby="help-label">
-              <label><input type="checkbox" name="help" value="audit" /> Audit & fixes</label>
-              <label><input type="checkbox" name="help" value="forms" /> Forms & errors</label>
-              <label><input type="checkbox" name="help" value="captions" /> Captions & media</label>
+              <label><input type="checkbox" name="help" value="audit" /> Audit &amp; fixes</label>
+              <label><input type="checkbox" name="help" value="forms" /> Forms &amp; errors</label>
+              <label><input type="checkbox" name="help" value="captions" /> Captions &amp; media</label>
             </div>
           </div>
 
@@ -159,7 +170,16 @@
         </fieldset>
       </form>
 
-      <p class="small">Directory: <a href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?tab=t.0">Web Page Bio Links</a></p>
+      <p class="small">
+        Directory:
+        <a
+          href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?tab=t.0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Web Page Bio Links
+        </a>
+      </p>
     </section>
   </main>
 
@@ -171,6 +191,3 @@
   </footer>
 </body>
 </html>
-
-<link rel="stylesheet" href="styles.css?v=2" />
-
